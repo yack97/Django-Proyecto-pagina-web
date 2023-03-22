@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 2;
+    padding: 3;
+}
+:root{
+    --oragen: #43157b;
+    --soft-orange: #3e1372;
+    --blue: #351864;
+
+}
+
+html{
+    font-size: 70.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+.plans--{
+    width: 50%;
+    min-width: 188px;
+    height: auto;
+    margin: 10 auto;
+    margin-bottom: 50px;
+}
+.plans--title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 40%;
+    min-width: 90px;
+    max-width: 30ppx;
+    height: 250px;
+    margin: 10px 35px 0;
+    padding: 0 15px;
+    background-color: rgb(136, 92, 92);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
+
+}
+.recomendado{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.2rem;
+    background-color: var(--oragen);
+    border-radius: 8px;
+    color: white;
+}
+.basico{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left: calc(50% - 60px);
+    top: -15px;
+    font-size: 1.2rem;
+    background-color: var(--blue);
+    border-radius: 8px;
+    color: white;
+}
+
+.pland-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+}
+.pland-card--price{
+    padding: 5px 20;
+    font-size: 8.5rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+.pland-card--saving{
+    font-size: 1.2rem;
+    color: #0f0e0e;
+}
+.pland-card--ca{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: rgb(243, 240, 240);
+    border:  2px solid var(--oragen);
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: black;
+    cursor: pointer;
+}
+.pland-card--ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(assets/icons/arrow-right.svg?raw=true);
+    vertical-align: text-bottom;
+}
+.pland-card--price span{
+    vertical-align: 58px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
